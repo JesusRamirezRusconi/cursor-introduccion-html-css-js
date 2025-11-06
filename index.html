@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- Define que este documento es HTML5 -->
+<html> <!-- Etiqueta raíz del documento HTML -->
+  <head> <!-- Contiene información sobre el documento que no se muestra en la página -->
+    <title>mis amigos</title> <!-- Título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlaza el archivo CSS para los estilos de la página -->
+  </head>
+  <body> <!-- Contiene todo el contenido visible de la página web -->
+
+    <!-- Barra de navegación principal con enlaces a sitios relacionados -->
+    <nav> <!-- Etiqueta semántica para elementos de navegación -->
+      <ul> <!-- Lista no ordenada que contiene los elementos del menú -->
+        <li><a href="https://superherotar.framiq.com/es/">Mis super heroes</a></li> <!-- Elemento de lista con enlace a sitio de superhéroes -->
+        <li><a href="https://villainous.fandom.com/es/wiki/Villainous_Wiki">Aqui los villanos</a></li> <!-- Elemento de lista con enlace a wiki de villanos -->
+        <li><a href="https://www.animeonegai.com/es/page/home">Los mas famosos de anime</a></li> <!-- Elemento de lista con enlace a sitio de anime -->
+        <li><a href="https://villainous.fandom.com/es/wiki/Villainous_Wiki">Aqui los villanos</a></li> <!-- Elemento de lista duplicado -->
+        <li><a href="https://www.animeonegai.com/es/page/home">Los mas famosos de anime</a></li> <!-- Elemento de lista duplicado -->
+      </ul>
+    </nav>
+
+    <!-- Sección de introducción personal -->
+    <div> <!-- Div agrupa elementos relacionados en una sección -->
+      <h1>mis mejores amigos</h1> <!-- Encabezado principal de nivel 1 -->
+      <p>me llamo luis</p><br> <!-- Párrafo que introduce el nombre -->
+      <p>me gusta comer papas</p> <!-- Párrafo con información personal -->
+      <p>salgo a pasear a mis perros</p> <!-- Párrafo con información personal -->
+      <p>me gusta salir con mi amigo juan</p> <!-- Párrafo con información personal -->
+      <p>juego muchos videojuegos</p> <!-- Párrafo con información personal -->
+      <p>me gusta hacer deportes</p> <!-- Párrafo con información personal -->
+      <p>me gustan las enchiladas</p> <!-- Párrafo con información personal -->
+      <p>me gustan las alitas de pollo</p> <!-- Párrafo con información personal -->
+    </div>
+
+    <!-- Sección de la tabla de amigos -->
+    <div> <!-- Div que agrupa la tabla en una sección separada -->
+      <table border="6"> <!-- Tabla con borde de 6px para mostrar datos en filas y columnas -->
+        <tr> <!-- Fila de la tabla -->
+          <th>nombre de mis amigos</th> <!-- Celda de encabezado de la tabla -->
+          <th>nombre de los favoritos</th> <!-- Celda de encabezado de la tabla -->
+          <th>nombre de el mejor</th> <!-- Celda de encabezado de la tabla -->
+        </tr>
+        <tr> <!-- Fila de datos de la tabla -->
+          <td>juan</td> <!-- Celda de datos de la tabla -->
+          <td>lupita</td> <!-- Celda de datos de la tabla -->
+          <td>benito</td> <!-- Celda de datos de la tabla -->
+        </tr>
+        <tr> <!-- Fila de datos de la tabla -->
+          <td>jorge</td> <!-- Celda de datos de la tabla -->
+          <td>lucia</td> <!-- Celda de datos de la tabla -->
+          <td>luis</td> <!-- Celda de datos de la tabla -->
+        </tr>
+        <tr> <!-- Fila de datos de la tabla -->
+          <td>jose</td> <!-- Celda de datos de la tabla -->
+          <td>maria</td> <!-- Celda de datos de la tabla -->
+          <td>luis</td> <!-- Celda de datos de la tabla -->
+        </tr>
+        <tr> <!-- Fila de datos de la tabla -->
+          <td>juan</td> <!-- Celda de datos de la tabla -->
+          <td>lupita</td> <!-- Celda de datos de la tabla -->
+          <td>benito</td> <!-- Celda de datos de la tabla -->
+        </tr>
+      </table>
+    </div>
+
+    <!-- Segunda sección de tabla con datos duplicados (podría ser un ejemplo de datos) -->
+    <div> <!-- Segundo div que agrupa otra tabla en una sección separada -->
+        <table border="6"> <!-- Segunda tabla con borde de 6px para mostrar datos en filas y columnas -->
+          <tr> <!-- Primera fila de encabezados de la segunda tabla -->
+            <th>nombre de mis amigos</th> <!-- Celda de encabezado para nombres de amigos -->
+            <th>nombre de los favoritos</th> <!-- Celda de encabezado para nombres favoritos -->
+            <th>nombre de el mejor</th> <!-- Celda de encabezado para el mejor nombre -->
+          </tr>
+          <tr> <!-- Primera fila de datos de la segunda tabla -->
+            <td>juan</td> <!-- Celda con nombre juan -->
+            <td>lupita</td> <!-- Celda con nombre lupita -->
+            <td>benito</td> <!-- Celda con nombre benito -->
+          </tr>
+          <tr> <!-- Segunda fila de datos de la segunda tabla -->
+            <td>jorge</td> <!-- Celda con nombre jorge -->
+            <td>lucia</td> <!-- Celda con nombre lucia -->
+            <td>luis</td> <!-- Celda con nombre luis -->
+          </tr>
+          <tr> <!-- Tercera fila de datos de la segunda tabla -->
+            <td>jose</td> <!-- Celda con nombre jose -->
+            <td>maria</td> <!-- Celda con nombre maria -->
+            <td>luis</td> <!-- Celda con nombre luis -->
+          </tr>
+          <tr> <!-- Cuarta fila de datos de la segunda tabla -->
+            <td>juan</td> <!-- Celda con nombre juan (duplicado) -->
+            <td>lupita</td> <!-- Celda con nombre lupita (duplicado) -->
+            <td>benito</td> <!-- Celda con nombre benito (duplicado) -->
+          </tr>
+        </table>
+    </div>
+
+
+
+    <!-- Sección de navegación e interacciones -->
+    <nav> <!-- Etiqueta semántica para elementos de navegación -->
+      <button onclick="saludar()" id="boton-interactivo">¡Boton verde yei !</button> <!-- Botón que ejecuta JavaScript cuando se hace clic, con id para manipulación -->
+    </nav>
+
+    <!-- Sección de contenido multimedia y mensajes dinámicos -->
+    <div> <!-- Div que agrupa imagen y mensaje dinámico -->
+      <img src="Luffy.webp" alt="Luffy de One Piece"> <!-- Muestra una imagen. src indica dónde está la imagen, alt describe la imagen si no carga -->
+      <p id="mensaje">Este texto será cambiado por JavaScript cuando hagas clic en el botón</p> <!-- Párrafo con id para que JavaScript pueda modificarlo dinámicamente -->
+    </div>
+
+    <script src="app.js"></script> <!-- Enlaza el archivo JavaScript externo para funcionalidad interactiva -->
+
+  </body>
+</html>

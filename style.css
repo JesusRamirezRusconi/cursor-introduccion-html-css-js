@@ -1,0 +1,151 @@
+/* Esto es un comentario en CSS. Los comentarios van entre /* y */
+/* El CSS es un lenguaje que se usa para dar estilo a las páginas web */
+
+body { /* Selecciona el elemento body (cuerpo) de la página */
+    font-family: Arial, sans-serif; /* Cambia la fuente del texto a Arial o sans-serif si Arial no está disponible */
+    background-color: rgb(255, 217, 0); /* Cambia el color de fondo de toda la página a azul claro */
+    margin: 20px; /* Agrega un margen de 20 píxeles alrededor del contenido */
+}   
+
+h1 { /* Selecciona todos los títulos h1 */
+    color: rgb(255, 106, 0); /* Cambia el color del texto a azul oscuro */
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 30px; /* Agrega espacio debajo del título */
+}
+
+p { /* Selecciona todos los párrafos */
+    font-size: 16px; /* Cambia el tamaño de la fuente a 16 píxeles */
+    line-height: 1.5; /* Agrega espacio entre líneas para mejor lectura */
+    margin: 10px 0; /* Agrega 10 píxeles de margen arriba y abajo, 0 a los lados */
+}
+
+table { /* Selecciona la tabla */
+    border-collapse: collapse; /* Une los bordes de las celdas para que no haya espacio entre ellos */
+    width: 100%; /* Hace que la tabla ocupe todo el ancho disponible */
+    margin: 20px 0; /* Agrega 20 píxeles de margen arriba y abajo */
+    background-color: white; /* Color de fondo blanco para la tabla */
+    border-radius: 8px; /* Esquinas redondeadas en la tabla */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga de las esquinas redondeadas */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra sutil alrededor de la tabla */
+}
+
+th, td { /* Selecciona tanto los encabezados (th) como las celdas normales (td) de la tabla */
+    border: 1px solid #ddd; /* Borde gris claro de 1 píxel alrededor de cada celda */
+    padding: 12px; /* Espacio interno de 12 píxeles dentro de cada celda */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+th { /* Selecciona solo los encabezados de la tabla */
+    background-color: #ff6a00; /* Color de fondo naranja para los encabezados */
+    color: white; /* Color del texto blanco en los encabezados */
+    font-weight: bold; /* Texto más grueso en los encabezados */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 1px; /* Espacio de 1px entre letras */
+}
+
+tr:nth-child(even) { /* Selecciona las filas pares de la tabla */
+    background-color: #f9f9f9; /* Color de fondo gris muy claro para filas alternas */
+}
+
+tr:hover { /* Selecciona las filas cuando el mouse está encima */
+    background-color: #e6f3ff; /* Color de fondo azul claro cuando el mouse está encima */
+}
+
+button { /* Selecciona el botón */
+    background-color: green; /* Cambia el color de fondo del botón a verde */
+    color: white; /* Cambia el color del texto del botón a blanco */
+    border: none; /* Quita el borde predeterminado del botón */
+    padding: 10px 20px; /* Agrega espacio interno: 10px arriba/abajo y 20px izquierda/derecha */
+    font-size: 16px; /* Cambia el tamaño de la fuente del botón a 16 píxeles */
+    cursor: pointer; /* Cambia el cursor del mouse a una mano cuando pasa sobre el botón */
+    border-radius: 5px; /* Redondea las esquinas del botón con un radio de 5 píxeles */
+    margin: 10px 0; /* Agrega 10 píxeles de margen arriba y abajo, 0 a los lados */
+}
+
+button:hover { /* Selecciona el botón cuando el mouse está encima */
+    background-color: darkgreen; /* Cambia el color de fondo a verde oscuro cuando el mouse está encima */
+    transform: translateY(-2px); /* Efecto de elevación sutil */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Sombra más pronunciada */
+}
+
+button:disabled { /* Estilo para cuando el botón está deshabilitado */
+    cursor: not-allowed; /* Cambia el cursor para indicar que no se puede hacer clic */
+    opacity: 0.6; /* Reduce la opacidad para mostrar estado deshabilitado */
+    transform: none; /* Quita transformaciones durante el estado deshabilitado */
+}
+
+img { /* Selecciona todas las imágenes */
+    width: 600px; /* Cambia el ancho de la imagen a 200 píxeles */
+    height: auto; /* Mantiene la proporción de la imagen automáticamente */
+    border: 2px solid black; /* Agrega un borde negro de 2 píxeles alrededor de la imagen */
+    border-radius: 10px; /* Redondea las esquinas de la imagen con un radio de 10 píxeles */
+    display: block; /* Hace que la imagen se comporte como un bloque (ocupa toda la línea) */
+    margin: 20px auto; /* Centra la imagen horizontalmente con 20px de margen arriba/abajo */
+}
+
+#mensaje { /* Selecciona el párrafo con id="mensaje" (el símbolo # indica id) */
+    text-align: center; /* Centra el texto del mensaje */
+    font-weight: bold; /* Hace el texto más grueso */
+    padding: 15px; /* Agrega espacio interno alrededor del texto */
+    background-color: lightyellow; /* Color de fondo amarillo claro */
+    border: 2px solid orange; /* Borde naranja alrededor */
+    border-radius: 8px; /* Esquinas redondeadas */
+    margin: 15px auto; /* Centra el elemento y agrega margen */
+    width: 80%; /* Ancho del 80% del contenedor */
+    transition: all 0.3s ease; /* Transición suave para todos los cambios de estilo */
+    transform-origin: center; /* Punto de origen para transformaciones */
+}
+
+/* ===== ESTILOS PARA LA BARRA DE NAVEGACIÓN ===== */
+
+nav { /* Selecciona la etiqueta nav que contiene los enlaces de navegación */
+    background-color: #333; /* Color de fondo gris oscuro para la barra de navegación */
+    padding: 15px; /* Espacio interno alrededor del contenido de la navegación */
+    border-radius: 10px; /* Esquinas redondeadas en la barra de navegación */
+    margin: 20px 0; /* Margen arriba y abajo de 20px, 0 a los lados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra sutil debajo de la barra */
+}
+
+nav ul { /* Selecciona la lista dentro de nav */
+    list-style-type: none; /* Quita los puntos de viñeta de la lista */
+    padding: 0; /* Quita el padding predeterminado de la lista */
+    margin: 0; /* Quita el margen predeterminado de la lista */
+    display: flex; /* Hace que los elementos de la lista se muestren en fila (horizontal) */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 30px; /* Espacio de 30px entre cada elemento de la lista */
+}
+
+nav li { /* Selecciona cada elemento de la lista dentro de nav */
+    display: inline-block; /* Hace que los elementos se muestren en línea pero como bloques */
+}
+
+nav a { /* Selecciona todos los enlaces dentro de nav */
+    color: white; /* Color del texto de los enlaces en blanco */
+    text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+    font-weight: bold; /* Hace el texto de los enlaces más grueso */
+    padding: 10px 20px; /* Espacio interno: 10px arriba/abajo, 20px izquierda/derecha */
+    border-radius: 5px; /* Esquinas redondeadas en los enlaces */
+    transition: all 0.3s ease; /* Animación suave de 0.3 segundos para todos los cambios */
+    display: inline-block; /* Hace que los enlaces se comporten como bloques inline */
+}
+
+nav a:hover { /* Selecciona los enlaces cuando el mouse está encima */
+    background-color: #555; /* Color de fondo gris medio cuando el mouse está encima */
+    color: #ffd700; /* Color del texto dorado cuando el mouse está encima */
+    transform: translateY(-2px); /* Mueve el enlace 2px hacia arriba para efecto de elevación */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Sombra más pronunciada cuando el mouse está encima */
+}
+
+/* ===== ESTILOS PARA LAS SECCIONES DIV ===== */
+
+div { /* Selecciona todos los divs para organizar mejor el contenido */
+    margin-bottom: 30px; /* Espacio de 30px debajo de cada div para separar secciones */
+    padding: 20px; /* Espacio interno de 20px en todos los divs */
+}
+
+div:first-of-type { /* Selecciona solo el primer div (la introducción personal) */
+    background-color: #f0f8ff; /* Color de fondo azul muy claro */
+    border-left: 5px solid #ff6a00; /* Borde izquierdo naranja de 5px de ancho */
+    border-radius: 8px; /* Esquinas redondeadas */
+}
+
